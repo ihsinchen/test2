@@ -1,8 +1,9 @@
 ### Use Vagrant install ubuntu
-1.	Select ubuntu 18.04 from website as below.  
+1.	Use Vagrant init to create default vagrantfile and if you are the first time to create ubuntu1804 this box, the box will be download from Vagrant cloud.  
 Vagrant init generic/ubuntu1804
-2.	Start the installation via below command  
+2.	enable the ubuntu1804 box via below command. 
 Vagrant up
 3.	Then the system is enabled.
 4.	Use Vagrant ssh to access to the VM.
-5.	Create the RSA Key
+5. turn off the VM via below command  
+vagrant halt
