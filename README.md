@@ -5,5 +5,6 @@ Vagrant init generic/ubuntu1804
 Vagrant up
 3.	Then the system is enabled.
 4.	Use Vagrant ssh to access to the VM.
-5. turn off the VM via below command  
+5.  Could Create RSA Key
+6.  turn off the VM via below command  
 vagrant halt
