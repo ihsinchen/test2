@@ -21,7 +21,7 @@ config.vm.define :app do |app_config|
 app_config.vm.box = "peru/ubuntu-18.04-server-amd64"
 app_config.vm.host_name = "app"
 
-config.vm.network :public_network
+app_config.vm.network :public_network
 end
 
   # Disable automatic box update checking. If you disable this, then
