@@ -1,12 +1,12 @@
 ##Use Vagrant install ubuntu  
-Use Vagrant init to create default vagrantfile and if you are the first time to create ubuntu1804 this box, the box will be download from Vagrant cloud.  
+1.Use Vagrant init to create default vagrantfile and if you are the first time to create ubuntu1804 this box, the box will be download from Vagrant cloud.  
 Vagrant init generic/ubuntu1804  
-enable the ubuntu1804 box via below command.  
+2.enable the ubuntu1804 box via below command.  
 Vagrant up  
-Then the system is enabled.  
-Use Vagrant ssh to access to the VM.  
-Could Create RSA Key  
-turn off the VM via below command  
+3.Then the system is enabled.  
+4.Use Vagrant ssh to access to the VM.  
+5.Could Create RSA Key  
+6.turn off the VM via below command  
 vagrant halt  
 
 ##Docker installation steps
@@ -20,8 +20,8 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 4. add docker repository to APT sources   
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"   
 5. update package database   
-sudo apt update   
-6.install from the Docker repo instead of the default Ubuntu    
+sudo apt update  
+6.install from the Docker repo instead of the default Ubuntu   
 $ apt-cache policy docker-ce   
 7. install docker   
 sudo apt install docker-ce   
