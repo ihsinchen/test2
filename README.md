@@ -21,9 +21,9 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"  
 5. update package database  
 $ sudo apt update  
-6.install from the Docker repo instead of the default Ubuntu  
+6. install from the Docker repo instead of the default Ubuntu  
 $ apt-cache policy docker-ce  
 7. install docker  
-sudo apt install docker-ce  
+$ sudo apt install docker-ce  
 8. the daemon started, and the process enabled to start on boot.   
 $ sudo systemctl status docker  
