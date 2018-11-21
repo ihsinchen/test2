@@ -25,5 +25,22 @@ $ sudo apt update
 $ apt-cache policy docker-ce  
 7. install docker  
 $ sudo apt install docker-ce  
-8. the daemon started, and the process enabled to start on boot.   
-$ sudo systemctl status docker  
+8. Check it's runnung or not   
+$ sudo systemctl status docker    
+9. if you don't want to use sudo.  
+$ sudo usermod -aG docker ${USER}  
+10. su - ${USER}  
+11. confirm user is added or not  
+$ id -nG  
+
+##Install Portainer  
+1. update the package first  
+$ sudo apt update  
+2. pull Portainer to the local    
+$ docker pull portainer/portainer  
+3. install portainer   
+$ docker volume create portainer_data  
+$ docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer  
+
+Note: becaue use virtual box to run Docker, the port setting is needed.  
+check local IP and client IP.  
